@@ -1,0 +1,22 @@
+@using bUnitDemo.Shared
+@inherits TestContext
+
+@code {
+    [Fact]
+	public void CounterStartsAtZero()
+	{
+		var cut = Render(@<Counter />);
+
+		cut.Find("p").MarkupMatches(@<p>Current count: 0</p>);
+	}
+
+    [Fact]
+	public void ClickingButtonIncrementsCounter()
+	{
+		var cut = Render(@<Counter />);
+
+		cut.Find("button").Click();
+
+		cut.Find("p").MarkupMatches(@<p>Current count: 1</p>);
+	}
+}

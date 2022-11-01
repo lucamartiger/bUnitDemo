@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "gbiuU74IjAqckMwaj43CjFadWR2BR9wMHfOQyY7xstg=",
+  "Source": "bUnitDemo.Shared",
+  "BasePath": "_content/bUnitDemo.Shared",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "bUnitDemo.Shared\\wwwroot",
+      "Source": "bUnitDemo.Shared",
+      "ContentRoot": "C:\\Users\\l.martini\\OneDrive - Hunext Software srl\\MBO\\2022\\bUnitDemo\\bUnitDemo.Shared\\wwwroot\\",
+      "BasePath": "_content/bUnitDemo.Shared",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\l.martini\\OneDrive - Hunext Software srl\\MBO\\2022\\bUnitDemo\\bUnitDemo.Shared\\wwwroot\\background.png",
+      "SourceId": "bUnitDemo.Shared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\l.martini\\OneDrive - Hunext Software srl\\MBO\\2022\\bUnitDemo\\bUnitDemo.Shared\\wwwroot\\",
+      "BasePath": "_content/bUnitDemo.Shared",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\l.martini\\OneDrive - Hunext Software srl\\MBO\\2022\\bUnitDemo\\bUnitDemo.Shared\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "bUnitDemo.Shared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\l.martini\\OneDrive - Hunext Software srl\\MBO\\2022\\bUnitDemo\\bUnitDemo.Shared\\wwwroot\\",
+      "BasePath": "_content/bUnitDemo.Shared",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    }
+  ]
+}
