@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bUnitDemo.Web", "bUnitDemo.Web\bUnitDemo.Web.csproj", "{365B62E8-60DE-4E56-B108-FF7D406DC73F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bUnitDemo.Web", "bUnitDemo.Web\bUnitDemo.Web.csproj", "{365B62E8-60DE-4E56-B108-FF7D406DC73F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bUnitDemo.Shared", "bUnitDemo.Shared\bUnitDemo.Shared.csproj", "{7CAD5B08-183D-46EF-9983-9DB61FEEB219}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bUnitDemo.Shared", "bUnitDemo.Shared\bUnitDemo.Shared.csproj", "{7CAD5B08-183D-46EF-9983-9DB61FEEB219}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bUnitDemo.Test", "bUnitDemo.Test\bUnitDemo.Test.csproj", "{368F8EC3-3797-4E19-B8CE-0B94F142B595}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bUnitDemo.Test", "bUnitDemo.Test\bUnitDemo.Test.csproj", "{368F8EC3-3797-4E19-B8CE-0B94F142B595}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

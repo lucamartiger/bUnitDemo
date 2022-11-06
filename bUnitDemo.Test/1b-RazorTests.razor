@@ -10,13 +10,12 @@
 		cut.Find("p").MarkupMatches(@<p>Current count: 0</p>);
 	}
 
-    [Fact]
-	public void ClickingButtonIncrementsCounter()
-	{
-		var cut = Render(@<Counter />);
-
-		cut.Find("button").Click();
-
-		cut.Find("p").MarkupMatches(@<p>Current count: 1</p>);
-	}
+	[Fact]
+    public void UseTextNotion() 
+    {
+        var cut = Render(@<text> //without this it doesn't works
+							<Counter />
+							<HelloWorld />
+						  </text>);
+    }
 }

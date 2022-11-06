@@ -11,8 +11,9 @@
 
 @code {
     [Parameter] public int CounterStart { get; set; }
-
+    [CascadingParameter] public int CascadingCounterStart { get; set; }
     [Parameter] public EventCallback<int> CounterIncremented { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 
     int currentCount = 0;
 
@@ -30,5 +31,10 @@
         CounterIncremented.InvokeAsync(currentCount);
 
         logService.LogMessage($"Counter has incremented {currentCount}");
+    }
+
+    public void ResetCounter()
+    {
+        currentCount = 0;
     }
 }

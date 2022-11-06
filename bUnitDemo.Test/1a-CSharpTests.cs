@@ -2,7 +2,7 @@ using bUnitDemo.Shared;
 
 namespace bUnitDemo.Test
 {
-    public class CSharpTests : TestContext //context inheritance
+    public class CSharpTests : TestContext //context inheritance (very useful)
     {
         [Fact]
         public void CounterStartsAtZero()

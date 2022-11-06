@@ -23,6 +23,16 @@ namespace bUnitDemo.Test
         }
 
         [Fact]
+        public void PassingCascadingParameter() //same syntax of classic parameters
+        {
+            int counterStart = 1;
+
+            var cut = RenderComponent<Counter>(parameters => parameters.Add(p => p.CascadingCounterStart, counterStart));
+
+            cut.Find("p").MarkupMatches($"<p>Current count: {counterStart}</p>");
+        }
+
+        [Fact]
         public void PassingTwoWayBindingParameter()
         {
             int counterStart = 1;
@@ -38,6 +48,14 @@ namespace bUnitDemo.Test
             Action<int> updateSecondaryCountHandler = (int currentCount) => { secondaryCount = currentCount; };
 
             var cut = RenderComponent<Counter>(parameters => parameters.Add(p => p.CounterIncremented, updateSecondaryCountHandler));
+        }
+
+        [Fact]
+        public void PassingRenderFragment()
+        {
+            using var ctx = new TestContext();
+
+            var cut = ctx.RenderComponent<Counter>(parameters => parameters.AddChildContent("<h1>Hello World</h1>"));
         }
 
         [Fact]
