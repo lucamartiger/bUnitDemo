@@ -1,6 +1,7 @@
 ﻿using bUnitDemo.Shared;
 using bUnitDemo.Shared.Interfaces;
 using bUnitDemo.Shared.Services;
+using NuGet.Frameworks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +39,8 @@ namespace bUnitDemo.Test
             int counterStart = 1;
 
             var cut = RenderComponent<Counter>(parameters => parameters.Bind(p => p.CounterStart, counterStart, newValue => counterStart = newValue));
+
+            cut.Find("p").MarkupMatches($"<p>Current count: {counterStart}</p>");
         }
 
         [Fact]
@@ -48,6 +51,8 @@ namespace bUnitDemo.Test
             Action<int> updateSecondaryCountHandler = (int currentCount) => { secondaryCount = currentCount; };
 
             var cut = RenderComponent<Counter>(parameters => parameters.Add(p => p.CounterIncremented, updateSecondaryCountHandler));
+
+            cut.Find("p").MarkupMatches("<p>Current count: 0</p>");
         }
 
         [Fact]
@@ -55,7 +60,9 @@ namespace bUnitDemo.Test
         {
             using var ctx = new TestContext();
 
-            var cut = ctx.RenderComponent<Counter>(parameters => parameters.AddChildContent("<h1>Hello World</h1>"));
+            var cut = ctx.RenderComponent<Counter>(parameters => parameters.AddChildContent("<h3>Hello World</h3>"));
+
+            cut.Find("h3").MarkupMatches("<h3>HelloWorld</h3>");
         }
 
         [Fact]
@@ -66,7 +73,9 @@ namespace bUnitDemo.Test
             Services.AddSingleton<ILogService>(logService);
 
             //in this components logservice has been injected
-            var cut = RenderComponent<Counter>();
+            CounterWithInjection cut = (CounterWithInjection)RenderComponent<CounterWithInjection>();
+
+            Assert.NotNull(cut.GetLogService());
         }
     }
 }

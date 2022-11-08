@@ -1,5 +1,4 @@
 ﻿@using bUnitDemo.Shared.Interfaces
-@inject ILogService logService
 
 <h1>Counter</h1>
 
@@ -29,8 +28,6 @@
         currentCount++;
 
         CounterIncremented.InvokeAsync(currentCount);
-
-        logService.LogMessage($"Counter has incremented {currentCount}");
     }
 
     public void ResetCounter()

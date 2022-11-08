@@ -1,0 +1,26 @@
+﻿@using bUnitDemo.Shared.Interfaces
+@inject ILogService logService
+
+<h1>Counter</h1>
+
+<p>
+    Current count: @currentCount
+</p>
+
+<button class="btn btn-primary" @onclick="IncrementCountAndLog">Click me</button>
+
+@code {
+    int currentCount = 0;
+
+    void IncrementCountAndLog()
+    {
+        currentCount++;
+
+        logService.LogMessage($"Counter has incremented {currentCount}");
+    }
+
+    public ILogService GetLogService()
+    {
+        return logService;
+    }
+}
