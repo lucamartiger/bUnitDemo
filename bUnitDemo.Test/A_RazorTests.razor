@@ -1,8 +1,8 @@
-@using bUnitDemo.Shared
+﻿@using bUnitDemo.Shared
 @inherits TestContext
 
 @code {
-    [Fact]
+	[Fact]
 	public void CounterStartsAtZero()
 	{
 		var cut = Render(@<Counter />);
@@ -11,10 +11,10 @@
 	}
 
 	[Fact]
-    public void UseTextNotion() 
-    {
-        var cut = Render(@<text> //without this it doesn't works
-							<Counter />
+	public void UseTextNotion()
+	{
+		var cut = Render(@<text>
+							<SimpleCounter />
 							<HelloWorld />
 						  </text>);
 

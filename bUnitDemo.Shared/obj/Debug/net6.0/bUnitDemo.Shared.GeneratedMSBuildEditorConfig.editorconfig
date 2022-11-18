@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = bUnitDemo.Shared
 build_property.RootNamespace = bUnitDemo.Shared
@@ -15,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Shared
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/ComponentWithHtmlContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50V2l0aEh0bWxDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -23,8 +28,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q291bnRlcldpdGhJbmplY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/CounterWithInputs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q291bnRlcldpdGhJbnB1dHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/CounterWithInteractions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q291bnRlcldpdGhJbnRlcmFjdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/HelloWorld.razor]
 build_metadata.AdditionalFiles.TargetPath = SGVsbG9Xb3JsZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/SimpleCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = U2ltcGxlQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/Task.razor]
+build_metadata.AdditionalFiles.TargetPath = VGFzay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/ToDoList.razor]
+build_metadata.AdditionalFiles.TargetPath = VG9Eb0xpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Shared/_Imports.razor]

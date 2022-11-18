@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qIHIvFVel6rwYViDi9aS7tolmQ29XlfQorfyc7JMbGM=",
+  "Hash": "GPnmLn/reTA0lNzvoUSU+E7qAz0TOfFT+YvBNkcxBEE=",
   "Source": "bUnitDemo.Test",
   "BasePath": "_content/bUnitDemo.Test",
   "Mode": "Default",
@@ -12,10 +12,10 @@
       "Source": "bUnitDemo.Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
       "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
   "DiscoveryPatterns": [

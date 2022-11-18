@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = bUnitDemo.Test
 build_property.RootNamespace = bUnitDemo.Test
@@ -15,8 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Test
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Test/1b-RazorTests.razor]
-build_metadata.AdditionalFiles.TargetPath = MWItUmF6b3JUZXN0cy5yYXpvcg==
+[C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Test/A_RazorTests.razor]
+build_metadata.AdditionalFiles.TargetPath = QV9SYXpvclRlc3RzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/l.martini/OneDrive - Hunext Software srl/MBO/2022/bUnitDemo/bUnitDemo.Test/_Imports.razor]

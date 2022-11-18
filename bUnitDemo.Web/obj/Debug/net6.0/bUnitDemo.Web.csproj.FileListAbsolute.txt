@@ -38,3 +38,8 @@ C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.W
 C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\bUnitDemo.Web.pdb
 C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\bUnitDemo.Web.genruntimeconfig.cache
 C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\ref\bUnitDemo.Web.dll
+C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\staticwebassets\msbuild.bUnitDemo.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.bUnitDemo.Web.props
+C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.bUnitDemo.Web.props
+C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.bUnitDemo.Web.props
+C:\Users\l.martini\OneDrive - Hunext Software srl\MBO\2022\bUnitDemo\bUnitDemo.Web\obj\Debug\net6.0\staticwebassets.pack.json

@@ -1,0 +1,53 @@
+﻿@using bUnitDemo.Shared.Interfaces
+
+<h1>Counter</h1>
+
+<p>
+    Current count: @currentCount
+</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@if(ChildContent != null)
+{
+    @ChildContent
+}
+
+@code {
+    [Parameter] public int CounterStart { get; set; }
+
+    [Parameter] public int TwoWayBindingCounterStart { get; set; }
+    [Parameter] public EventCallback<int> TwoWayBindingCounterStartChanged { get; set; }
+
+    [CascadingParameter] public int CascadingCounterStart { get; set; }
+
+    [Parameter] public EventCallback<int> CounterIncremented { get; set; }
+
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    int currentCount = 0;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        if (CounterStart > 0)
+            currentCount = CounterStart;
+        else if (TwoWayBindingCounterStart > 0)
+            currentCount = TwoWayBindingCounterStart;
+        else if (CascadingCounterStart > 0)
+            currentCount = CascadingCounterStart;
+    }
+
+    void IncrementCount()
+    {
+        currentCount++;
+
+        CounterIncremented.InvokeAsync(currentCount);
+    }
+
+    public void ResetCounter()
+    {
+        currentCount = 0;
+    }
+}

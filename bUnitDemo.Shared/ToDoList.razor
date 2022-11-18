@@ -1,0 +1,10 @@
+﻿<h3>ToDoList</h3>
+
+@foreach(string s in Tasks)
+{
+    <Task TaskDescription="s" />
+}
+
+@code {
+    [Parameter] public IEnumerable<string> Tasks{ get; set; }
+}

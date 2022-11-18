@@ -1,0 +1,40 @@
+﻿@using bUnitDemo.Shared.Interfaces
+
+<h1>Counter</h1>
+
+<p>
+    Current count: @currentCount
+</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    [Parameter] public int CounterStart { get; set; }
+    [Parameter] public EventCallback<int> CounterIncremented { get; set; }
+
+    int currentCount = 0;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        currentCount = CounterStart;
+    }
+
+    void IncrementCount()
+    {
+        currentCount++;
+
+        CounterIncremented.InvokeAsync(currentCount);
+    }
+
+    public int GetCounter()
+    {
+        return currentCount;
+    }
+
+    public void ResetCounter()
+    {
+        currentCount = 0;
+    }
+}
