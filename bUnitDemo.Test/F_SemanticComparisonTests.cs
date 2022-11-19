@@ -14,7 +14,7 @@
         [Fact]
         public void IgnoreAnElement()
         {
-            var cut = RenderComponent<SimpleCounter>();
+            var cut = RenderComponent<ComponentWithHtmlContent>();
 
             //<h1 class="heading-1">Hello world</h1>
             //diff:ignore attribute to ignore an element, all its attributes and its child nodes
@@ -24,7 +24,7 @@
         [Fact]
         public void IgnoreAnAttribute()
         {
-            var cut = RenderComponent<SimpleCounter>();
+            var cut = RenderComponent<ComponentWithHtmlContent>();
 
             //<h1 class="heading-1">Hello world</h1>
             //ignore only that attribute
@@ -34,7 +34,7 @@
         [Fact]
         public void IgnoreChildren()
         {
-            var cut = RenderComponent<SimpleCounter>();
+            var cut = RenderComponent<ComponentWithHtmlContent>();
 
             //<h3>Hello world<span>!</span></h3>
             //ignore attribute children
@@ -44,13 +44,21 @@
         [Fact]
         public void ConfigureWhitespaceHandling()
         {
+            var cut = RenderComponent<ComponentWithHtmlContent>();
 
+            //<h2> Hello world </h2>
+            //trim all text nodes
+            cut.Find("h2").MarkupMatches(@"<h2 diff:normalize>Hello world</h2>");
         }
 
         [Fact]
         public void PerformCaseInsensitiveComparison()
         {
+            var cut = RenderComponent<ComponentWithHtmlContent>();
 
+            //<h2> Hello world </h2>
+            //case insensitive
+            cut.Find("h2").MarkupMatches(@"<h2 diff:ignorecase>HeLlO wOrLd</h2>");
         }
     }
 }
