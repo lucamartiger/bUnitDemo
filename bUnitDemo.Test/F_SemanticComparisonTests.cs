@@ -1,13 +1,6 @@
 ﻿namespace bUnitDemo.Test
 {
-    using AngleSharp.Css.Dom;
-    using AngleSharp.Dom;
     using bUnitDemo.Shared;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class F_SemanticComparisonTests : TestContext
     {

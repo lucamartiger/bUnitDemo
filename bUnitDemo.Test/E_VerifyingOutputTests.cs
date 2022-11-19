@@ -1,10 +1,6 @@
 ﻿namespace bUnitDemo.Test
 {
     using bUnitDemo.Shared;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     public class E_VerifyingOutputTests : TestContext
     {
@@ -29,7 +25,7 @@
         [Fact]
         public void VerifyInnerComponents()
         {
-            var cut = RenderComponent<ToDoList>(parameter => parameter.Add(p => p.Tasks, new[] { "Task 1", "Task 2" }) );
+            var cut = RenderComponent<ToDoList>(parameter => parameter.Add(p => p.Tasks, new[] { "Task 1", "Task 2" }));
 
             var tasks = cut.FindComponents<Task>();
 
