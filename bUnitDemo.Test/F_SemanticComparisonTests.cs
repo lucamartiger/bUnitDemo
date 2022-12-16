@@ -10,7 +10,7 @@
             var cut = RenderComponent<ComponentWithHtmlContent>();
 
             //<h1 class="heading-1">Hello world</h1>
-            //diff:ignore attribute to ignore an element, all its attributes and its child nodes
+            //diff:ignore --> ignore an element, all its attributes and its child nodes
             cut.Find("h1").MarkupMatches(@"<h1 class=""heading-1"" diff:ignore></h1>");
         }
 
@@ -30,7 +30,7 @@
             var cut = RenderComponent<ComponentWithHtmlContent>();
 
             //<h3>Hello world<span>!</span></h3>
-            //ignore attribute children
+            //ignore children
             cut.Find("h3").MarkupMatches(@"<h3 diff:ignoreChildren>Hello world</h3>");
         }
 

@@ -31,6 +31,7 @@
             Assert.True(secondaryCount == 1);
         }
 
+        //(1) all other interaction types
         [Fact]
         public void InvokeButtonClick()
         {

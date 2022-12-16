@@ -1,5 +1,5 @@
 ﻿@using bUnitDemo.Shared
-@inherits TestContext
+@inherits TestContext //context inheritance (very useful)
 
 @code {
 	[Fact]
@@ -11,7 +11,7 @@
 	}
 
 	[Fact]
-	public void UseTextNotion()
+	public void UseTextNotion() //more content
 	{
 		var cut = Render(@<text>
 							<SimpleCounter />
